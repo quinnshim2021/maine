@@ -1,32 +1,26 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './App.css';
-import pic from './img/orchard1.jpeg';
-import pic2 from './img/orchard2.jpeg';
+import IMAGES from './IMAGES';
 
-const PicCarousel = () => {
+const PicCarousel = (place) => {
   const [index, setIndex] = useState(0);
-
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-
+  
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
+      {Object.entries(IMAGES).map(([key, img]) => key.includes(place.place) ?
+        <Carousel.Item>
         <img
           className="d-block w-100"
-          src={pic}
-          alt="First slide"
+          src={img}
+          alt="slide"
         />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={pic2}
-          alt="Second slide"
-        />
-      </Carousel.Item>
+        <Carousel.Caption><h1>{place.place}</h1></Carousel.Caption>
+      </Carousel.Item> : null
+      )}
     </Carousel>
   );
 }

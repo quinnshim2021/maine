@@ -40,60 +40,49 @@ const MapCont = () =>{
 
         <Marker position={[43.6496294,-70.2919836]}> {/* Thompson's Point (Portland) */}
             <Popup className='popup'>
+              <CardComp place={'thompson'}/>
             </Popup>
         </Marker>
 
         <Marker position={[43.65592, -70.252493]}> {/* Dimillo's Marina (Portland) */}
             <Popup className='popup'>
-            
-            </Popup>
-        </Marker>
-
-        <Marker position={[43.6578537,-70.2502961]}> {/* Port 65 Kitchen & Bar (Portland) */}
-            <Popup className='popup'>
-            
-            </Popup>
-        </Marker>
-
-        <Marker position={[43.6654494,-70.2405653]}> {/* Fort Allen Park (Portland) */}
-            <Popup className='popup'>
-            
+            <CardComp place={'dimillo'} />
             </Popup>
         </Marker>
 
         <Marker position={[43.65944,-70.251223]}> {/* Eventide Oyster Co. (Portland) */}
             <Popup className='popup'>
-            
+            <CardComp place={'eventide'} />
             </Popup>
         </Marker>
 
         <Marker position={[43.517684, -70.377731]}> {/* Old Orchard Beach (Beach Vector) */}
             <Popup className='popup'>
-                <CardComp />
+                <CardComp place={'orchard'} />
             </Popup>
         </Marker>
 
         <Marker position={[44.320565,-68.206759]}> {/* Otter Creek (Acadia) */}
             <Popup className='popup'>
-            
+            <CardComp place={'otter'} />
             </Popup>
         </Marker>
 
         <Marker position={[44.3205301,-68.2535589]}> {/* Jordan Pond (Acadia) */}
             <Popup className='popup'>
-            
+            <CardComp place={'jordan'} />
             </Popup>
         </Marker>
 
         <Marker position={[44.3528575,-68.2239025]}> {/* Cadillac Mountain (Acadia) */}
             <Popup className='popup'>
-            
+            <CardComp place={'cadillac'} />
             </Popup>
         </Marker>
 
         <Marker position={[44.38758,-68.2039]}> {/* Bar Harbor (Bar Harbor) */}
             <Popup className='popup'>
-            
+              <CardComp place={'bar'} />
             </Popup>
         </Marker>
 
