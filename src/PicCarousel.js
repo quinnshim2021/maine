@@ -11,14 +11,14 @@ const PicCarousel = (place) => {
   
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      {Object.entries(IMAGES).map(([key, img]) => key.includes(place.place) ?
+      {Object.entries(IMAGES).map(([key, img]) => key.includes(place.place[0]) ?
         <Carousel.Item>
         <img
           className="d-block w-100"
           src={img}
           alt="slide"
         />
-        <Carousel.Caption><h1>{place.place}</h1></Carousel.Caption>
+        <Carousel.Caption><h1>{place.place[1]}</h1></Carousel.Caption>
       </Carousel.Item> : null
       )}
     </Carousel>

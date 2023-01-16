@@ -19,6 +19,8 @@ const IMAGES = {
     eventide4: require('./img/eventide/eventide4.jpeg'),
     eventide5: require('./img/eventide/eventide5.jpeg'),
     eventide6: require('./img/eventide/eventide6.jpeg'),
+    eventide7: require('./img/eventide/eventide7.jpeg'),
+    eventide8: require('./img/eventide/eventide8.jpeg'),
     jordan1: require('./img/jordan/jordan1.jpeg'),
     jordan2: require('./img/jordan/jordan2.jpeg'),
     jordan3: require('./img/jordan/jordan3.jpeg'),

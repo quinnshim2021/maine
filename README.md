@@ -25,6 +25,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 # Future Improvements
 Plz just host the images somewhere lol
-Fix carousel names
 Make styling actually bearable 
 Toggle vectors when selected
