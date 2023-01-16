@@ -1,10 +1,36 @@
-.App {
+.proj_body {
+  background: #FFA987 !important;
+}
+
+.landing_app {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+hr {
+  width: 80% !important; 
+}
+
+.header {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  padding: 1vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 2.5vh !important;
+}
+
+.leaflet-container {
+  margin: 0 auto;
+  width: 95%;
+  height: 80vh;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +61,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.popup {
+  height: 40vh;
+  width: 33vh;
+}
+
+image {
+  height: 100%;
+  width: 100%;
 }
